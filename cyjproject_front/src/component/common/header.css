@@ -1,0 +1,40 @@
+.header {
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+  }
+  .header-inner {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 150px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-left {
+    width: 25%;
+    float: left;
+  }
+  .header-left > * {
+    float: left;
+  }
+ 
+  .header-left .logo {
+    width: 50%;
+  }
+  .header .logo img {
+    width: 90%;
+    margin-top: 5px;
+  }
+  .header-right {
+    width : 70%;
+    overflow:hidden;
+    
+  }
+  .header-right>*{
+    float: left;
+    margin-right: 50px;
+    
+  }
+  
