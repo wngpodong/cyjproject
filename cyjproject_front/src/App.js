@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./component/common/Header";
 import Login from "./component/member/Login";
 import Join from "./component/member/Join";
-
+import Board from "./component/board/Board";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
                 <Join />
               }
             />
+            <Route path="/board/*" element={<Board />} />
           </Routes>
         </div>
       </div>

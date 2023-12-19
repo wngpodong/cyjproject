@@ -1,0 +1,210 @@
+.join-wrap {
+    margin-top: 50px;
+  }
+  
+  .join-title > h3 {
+    position: relative;
+    padding: 0 0 10px 0;
+    font-size: 50px;
+    color: #171717;
+    font-weight: 500;
+    border-bottom: 2px solid #ededed;
+    text-align: center;
+  }
+  
+  .join-content {
+    width: 70%;
+    margin: 50px auto;
+  }
+  
+  .join-agree-explain {
+    color: #bababa;
+    width: 90%;
+    height: 200px;
+    overflow: auto;
+    margin: 15px auto;
+    padding: 20px;
+    font-size: 13px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+  }
+  
+  .agree-required {
+    color: #ff4c4c;
+  }
+  
+  .checks {
+    margin: 30px 10px;
+  }
+  
+  .checks input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checks input[type="checkbox"] + label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #c7c7c7;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .join-agree-wrap {
+    display: block;
+  }
+  
+  /* .checks input[type="checkbox"]:checked + label:before {
+    background: url(/public/img/check.png) no-repeat 50% 50% #4b38ff;
+    border-color: #4b38ff;
+  } */
+  
+  .join-agree-btn {
+    text-align: center;
+  }
+  
+  .join-agree-btn > div {
+    width: 30%;
+    display: inline-block;
+    margin: 50px 0;
+  }
+  
+  .join-agree-btn > div:first-child {
+    margin-right: 30px;
+  }
+  
+  .all-check {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .joinFrm-wrap {
+    display: none;
+  }
+  
+  .joinFrm-content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .join-input-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ededed;
+  }
+  
+  .join-input-wrap > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .join-input-wrap > div > .label {
+    width: 30%;
+  }
+  
+  .join-input-wrap > div > .input {
+    width: 70%;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .label {
+    font-size: 18px;
+  }
+  
+  .join-essential {
+    color: #ff4c4c;
+  }
+  
+  .input input[type="radio"] + label {
+    width: calc(100% / 2);
+    cursor: pointer;
+    height: 45px;
+    float: left;
+    border: 1px solid #D0C0A7;
+    box-sizing: border-box;
+    text-align: center;
+    color: #D0C0A7;
+    line-height: 45px;
+  }
+  
+  input[type="radio"]:checked + label {
+    background-color: #D0C0A7;
+    color: #fff;
+  }
+  
+ 
+
+  
+ 
+  
+  .check-msg {
+    font-size: 0.8em;
+    width: 70%;
+    align-self: flex-end;
+    color: #ff4c4c;
+  }
+  
+  .check-blue {
+    font-size: 0.8em;
+    width: 70%;
+    align-self: flex-end;
+    color: #4b38ff;
+  }
+  
+  .input > select {
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border: 1px solid #ededed;
+  }
+  
+  #sub-category {
+    display: none;
+    margin-left: 30px;
+  }
+  
+  #main-category > option:first-child,
+  #sub-category > option:first-child {
+    display: none;
+  }
+  
+  .join-select-print-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .print-box-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .print-box-item > div {
+    background-color: #eee;
+    border-radius: 45px;
+    font-size: 12px;
+    padding: 3px 10px;
+    margin-right: 10px;
+  }
+  
+  .print-box-item > img {
+    margin-left: -7px;
+  }
+  
+  .join-select-print-box > div > img {
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  

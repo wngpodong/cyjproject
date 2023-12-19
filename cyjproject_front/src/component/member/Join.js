@@ -4,9 +4,10 @@ import { Button1, Button2 } from "../util/Button";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import "./join.css";
 
 const Join = () => {
-//     const navigate = useNavigate();
+     const navigate = useNavigate();
 
   const [memberId, setMemberId] = useState("");
   const [memberName, setMemberName] = useState("");
@@ -111,9 +112,68 @@ const Join = () => {
       setCheckEmailMsg("");
     }
   };
-
+  const join = () => {
+    const member = {
+      memberId,
+      memberPw,
+      memberName,
+      memberPhone,
+      memberGender,
+      memberBirth,
+      memberEmail,
+    };
+  
+    if (
+      memberId !== "" &&
+      memberPw !== "" &&
+      memberName !== "" &&
+      memberPhone !== "" &&
+      memberGender !== "" &&
+      memberBirth !== "" &&
+      memberEmail !== "" &&
+      checkPwMsg == "" &&
+      checkPwReMsg == "" &&
+      checkBirthMsg == "" &&
+      checkEmailMsg == "" &&
+      checkNameMsg == ""
+    ) {
+      const form = new FormData();
+      form.append("memberId", memberId);
+      form.append("memberPw", memberPw);
+      form.append("memberName", memberName);
+      form.append("memberPhone", memberPhone);
+      form.append("memberGender", memberGender);
+      form.append("memberBirth", memberBirth);
+      form.append("memberEmail", memberEmail);
+     
+     
+  
+      axios
+        .post("/member/join", form, {
+          headers: {
+            contentType: "multipart/form-data",
+            processData: false,
+          },
+        })
+        .then((res) => {
+          console.log(res.data);
+          if (res.data > 0) {
+            Swal.fire("회원가입 완료!");
+            navigate("/login");
+          }
+        })
+        .catch((res) => {
+          console.log(res.response.status);
+        });
+    } else {
+      Swal.fire("입력값을 확인하세요.");
+    }
+  };
   return (
     <div className="joinFrm">
+      <div className="join-title">
+          <h3>회원 가입</h3>
+        </div>
       <div className="joinFrm-content">
         <JoinInputWrap
           data={memberId}
@@ -236,12 +296,13 @@ const Join = () => {
       </div>
       <div className="join-agree-btn">
         <div>
-          <Button1 text="회원가입" />
+          <Button1 text="회원가입" clickEvent={join} />
         </div>
       </div>
     </div>
   );
 };
+
 
 const JoinInputWrap = (props) => {
   const data = props.data;

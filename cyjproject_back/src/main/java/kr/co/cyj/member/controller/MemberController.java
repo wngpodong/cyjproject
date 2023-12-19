@@ -37,7 +37,22 @@ public class MemberController {
 		
 		
 		
-		
+		@GetMapping(value="/checkId/{memberId}")
+		public int checkId(@PathVariable String memberId) {
+			Member m = memberService.selectOneMember(memberId);
+			if(m == null) {
+				return 0;
+			}else {
+				return 1;
+			}
+		}
+		@PostMapping(value="/join")
+		public int join(@ModelAttribute Member member) {
+			
+			
+			int result = memberService.insertMember(member);
+			return result;
+		}
 	
 
 }

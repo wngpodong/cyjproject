@@ -22,7 +22,12 @@ public class MemberService {
 	// 회원가입
 		@Transactional
 		public int insertMember(Member member) {
+			System.out.println(member);
 			return memberDao.insertMember(member);
+		}
+		public Member selectOneMember(String memberId) {
+			
+			return memberDao.selectOneMember(memberId);
 		}
 
 }
