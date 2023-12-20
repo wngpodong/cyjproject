@@ -29,7 +29,7 @@ public class BoardService {
 
 	public HashMap<String, Object> boardList(int reqPage) {
 		//게시물 조회, 페이징에 필요한 데이터를 취합(페이지를 만드는 것은 리액트에서)
-		int numPerPage = 12; 	//한페이지당 게시물 수 
+		int numPerPage = 10; 	//한페이지당 게시물 수 
 		int pageNaviSize = 5;	//페이지 네비게이션 길이
 		int totalCount = boardDao.totalCount();//전체 게시물 수
 		//페이징조회 및 페이지 네비 제작에 필요한 데이터를 객체로 받아옴		

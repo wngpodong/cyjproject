@@ -1,0 +1,55 @@
+.board-all-wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 공지사항 */
+.board-title {
+    font-weight: 900;
+    margin: 30px 0px;
+}
+
+/* 공지사항 리스트 */
+
+
+
+
+
+.board-list-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    line-height: 24px;
+    padding: 18px 0px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #ededed;
+}
+
+.board-list-title-wrap>:nth-child(1),
+.board-list-title-wrap>:nth-child(3) {
+    flex: 0 0 auto;
+}
+
+.board-list-title-wrap>:nth-child(2) {
+    flex: 1 1 auto;
+}
+
+.board-list-tab {
+    margin-left: 0px;
+    margin-right: 21px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 0px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background-color: #2D31FA;
+
+}
+
+.board-list-title {
+    font-weight: 900;
+}

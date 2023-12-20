@@ -16,9 +16,8 @@ public class Board {
 	
 	private int boardNo;	
 	private String boardTitle;
-	private String boardImg;
-	private String boardDetail;
-	private int boardWriter;
+	private String boardContent;
+	private String boardWriter;
 	private String memberId;	
 	private String boardDate;
 	private List fileList;

@@ -1,3 +1,26 @@
 npm install react-router-dom
 npm install sweetalert2
 npm install axios
+npm install react-quill
+npm install quill-image-resize-module-react 
+미설치
+
+npm install @mui/material @emotion/react @emotion/styled
+npm install swiper@6.8.4
+
+npm install swiper@8.0.0
+
+2023-10-04
+npm install react-calendar
+주소api
+npm install react-daum-postcode
+
+2023-10-10
+npm i react-modal
+npm i @types/react-modal
+
+2023-10-16
+npm install react-kakao-maps-sdk
+
+2023-10-17
+npm install moment
